@@ -36,7 +36,7 @@ Pré-requisitos: Java 17
 
 
 - Estou utilizando o Insomnia para fazer requisições ao sistema.
-- Exemplo de cadastro de médico: No postman altera de GET para POST.
+- Cadastro de médico.
 ```json
 {
 "nome": "Rodrigo Ferreira",
