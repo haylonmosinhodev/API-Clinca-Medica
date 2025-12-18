@@ -1,16 +1,15 @@
 package med.voli.api.controller;
 
 import jakarta.validation.Valid;
-import med.voli.api.endereco.Endereco;
 import med.voli.api.medico.DadosCadastroMedico;
+import med.voli.api.medico.DadosListagemMedico;
 import med.voli.api.medico.Medico;
 import med.voli.api.medico.MedicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 
 //Trello projeto = https://trello.com/c/YwnK9c9m/1-cadastro-de-m%C3%A9dicos
@@ -28,4 +27,10 @@ public class MedicoController {
     public void cadastrar(@RequestBody @Valid  DadosCadastroMedico dados){
     repository.save(new Medico(dados));
     }
+
+    @GetMapping
+    public List<DadosListagemMedico> listar(){
+        return repository.findAll().stream().map(DadosListagemMedico::new).toList();
+    }
+
 }
