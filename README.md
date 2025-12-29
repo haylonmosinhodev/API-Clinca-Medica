@@ -34,6 +34,9 @@ Pré-requisitos: Java 17
 # Como executar o projeto
 - Estou Utilizando nesse projeto a IDE IntelliJ, execute aplicação normalmente.
 
+- <img width="1284" height="971" alt="image" src="https://github.com/user-attachments/assets/cc95a3a7-a9b3-4290-82e5-29d98db0da8a" />
+
+
 
 - Estou utilizando o Insomnia para fazer requisições ao sistema.
 - Cadastro de médico.
