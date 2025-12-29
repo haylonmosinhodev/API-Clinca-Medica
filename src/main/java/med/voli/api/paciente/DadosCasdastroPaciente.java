@@ -23,7 +23,7 @@ public record DadosCasdastroPaciente(
         @NotBlank
         @Pattern(regexp = "\\d{11}")
         String cpf,
-        @NotBlank
+
 
         @NotNull
         @Valid
