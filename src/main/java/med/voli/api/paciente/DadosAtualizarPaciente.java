@@ -1,10 +1,9 @@
-package med.voli.api.medico;
+package med.voli.api.paciente;
 
 import jakarta.validation.constraints.NotNull;
 import med.voli.api.endereco.DadosEndereco;
 
-
-public record DadosAtualizarMedico(
+public record DadosAtualizarPaciente(
         @NotNull
         Long id,
 
@@ -13,5 +12,4 @@ public record DadosAtualizarMedico(
         String telefone,
 
         DadosEndereco endereco) {
-
 }
