@@ -35,4 +35,8 @@ public class PacienteController {
     public Page<DadosListagemPaciente> listar(@PageableDefault(sort = {"nome"}) Pageable paginacao){
         return repository.findAll(paginacao).map(DadosListagemPaciente::new);
     }
+
+    @DeleteMapping
+    @Transactional
+    public void excluir
 }
