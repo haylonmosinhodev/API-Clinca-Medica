@@ -1,4 +1,4 @@
-# Sobre o projeto (EM PRODUÇÂO)
+# Sobre o projeto
 
  Trata-se da criação de uma API REST, a aplicação consiste em criar projeto de web services com Spring Boot, JPA e MySQL para gerenciar as ativadades de um clinica medica.
  Conteudo aprendido durantes aulas da formação beck-end da Alura.
